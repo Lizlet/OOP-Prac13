@@ -3,17 +3,19 @@
         <VBFixedString(30)> Public sName As String
         <VBFixedString(5)> Public sClass As String
         <VBFixedString(25)> Public sEmail As String
+        Public dtDoB As DateTime
     End Structure
     Private myStudent As StudentPost
-    Const postLength = 60
+    Const postLength = 68
     Private count As Integer 'number of posts
     Private position As Integer 'currebt position
     Private fileNumber As Integer
+    Private filename As String = "student.dat"
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         fileNumber = FreeFile()
-        FileOpen(fileNumber, "student.dat", OpenMode.Random,,, postLength)
-        count = FileLen("student.dat") / postLength
+        FileOpen(fileNumber, filename, OpenMode.Random,,, postLength)
+        count = FileLen(filename) / postLength
 
         If count > 0 Then
             FileGet(fileNumber, myStudent, 1)
