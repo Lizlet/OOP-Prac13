@@ -71,7 +71,7 @@
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        If position >= count Then
+        If position >= 1 Then
             If position > 1 Then
                 position -= 1
             End If
