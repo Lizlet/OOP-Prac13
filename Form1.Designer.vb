@@ -36,7 +36,7 @@ Partial Class Form1
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.txtCurrentPost = New System.Windows.Forms.TextBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.dtpDoB = New System.Windows.Forms.DateTimePicker()
         Me.SuspendLayout()
         '
         'Button1
@@ -158,19 +158,19 @@ Partial Class Form1
         Me.txtCurrentPost.Size = New System.Drawing.Size(75, 20)
         Me.txtCurrentPost.TabIndex = 14
         '
-        'DateTimePicker1
+        'dtpDoB
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(138, 101)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 15
+        Me.dtpDoB.Location = New System.Drawing.Point(138, 101)
+        Me.dtpDoB.Name = "dtpDoB"
+        Me.dtpDoB.Size = New System.Drawing.Size(200, 20)
+        Me.dtpDoB.TabIndex = 15
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(355, 165)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.dtpDoB)
         Me.Controls.Add(Me.txtCurrentPost)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
@@ -206,5 +206,5 @@ Partial Class Form1
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents txtCurrentPost As TextBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dtpDoB As DateTimePicker
 End Class
