@@ -33,10 +33,10 @@ Partial Class Form1
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.txtClass = New System.Windows.Forms.TextBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.txtCurrentPost = New System.Windows.Forms.TextBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.SuspendLayout()
         '
         'Button1
@@ -115,45 +115,37 @@ Partial Class Form1
         '
         Me.txtName.Location = New System.Drawing.Point(138, 13)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(135, 20)
+        Me.txtName.Size = New System.Drawing.Size(200, 20)
         Me.txtName.TabIndex = 8
         '
         'txtClass
         '
         Me.txtClass.Location = New System.Drawing.Point(138, 42)
         Me.txtClass.Name = "txtClass"
-        Me.txtClass.Size = New System.Drawing.Size(135, 20)
+        Me.txtClass.Size = New System.Drawing.Size(200, 20)
         Me.txtClass.TabIndex = 9
         '
         'txtEmail
         '
         Me.txtEmail.Location = New System.Drawing.Point(138, 72)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(135, 20)
+        Me.txtEmail.Size = New System.Drawing.Size(200, 20)
         Me.txtEmail.TabIndex = 10
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(138, 102)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(135, 20)
-        Me.TextBox4.TabIndex = 11
-        Me.TextBox4.Text = "Filler"
         '
         'Button5
         '
         Me.Button5.Location = New System.Drawing.Point(97, 128)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(85, 23)
+        Me.Button5.Size = New System.Drawing.Size(117, 23)
         Me.Button5.TabIndex = 12
         Me.Button5.Text = "<< Prev"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(188, 128)
+        Me.Button6.Location = New System.Drawing.Point(220, 127)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(85, 23)
+        Me.Button6.Size = New System.Drawing.Size(118, 23)
         Me.Button6.TabIndex = 13
         Me.Button6.Text = "Next >>"
         Me.Button6.UseVisualStyleBackColor = True
@@ -166,15 +158,22 @@ Partial Class Form1
         Me.txtCurrentPost.Size = New System.Drawing.Size(75, 20)
         Me.txtCurrentPost.TabIndex = 14
         '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(138, 101)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.TabIndex = 15
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(285, 165)
+        Me.ClientSize = New System.Drawing.Size(355, 165)
+        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.txtCurrentPost)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.txtClass)
         Me.Controls.Add(Me.txtName)
@@ -204,8 +203,8 @@ Partial Class Form1
     Friend WithEvents txtName As TextBox
     Friend WithEvents txtClass As TextBox
     Friend WithEvents txtEmail As TextBox
-    Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents txtCurrentPost As TextBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class
