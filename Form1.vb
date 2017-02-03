@@ -22,6 +22,7 @@
             txtName.Text = myStudent.sName
             txtClass.Text = myStudent.sClass
             txtEmail.Text = myStudent.sEmail
+            dtpDoB.Value = myStudent.dtDoB
             position = 1
         Else
             position = 0
@@ -38,6 +39,7 @@
                 .sName = txtName.Text
                 .sClass = txtClass.Text
                 .sEmail = txtEmail.Text
+                .dtDoB = dtpDoB.Value
             End With
 
             FilePut(fileNumber, myStudent, position)
@@ -45,6 +47,7 @@
             txtName.Text = ""
             txtClass.Text = ""
             txtEmail.Text = ""
+            dtpDoB.Value = DateTimePicker.MinimumDateTime
             txtCurrentPost.Text = ""
         Else
             MsgBox("A field is empty")
@@ -61,6 +64,7 @@
             txtName.Text = myStudent.sName
             txtClass.Text = myStudent.sClass
             txtEmail.Text = myStudent.sEmail
+            dtpDoB.Value = myStudent.dtDoB
         End If
 
         txtCurrentPost.Text = position
@@ -76,6 +80,7 @@
             txtName.Text = myStudent.sName
             txtClass.Text = myStudent.sClass
             txtEmail.Text = myStudent.sEmail
+            dtpDoB.Value = myStudent.dtDoB
         End If
 
         txtCurrentPost.Text = position
@@ -92,5 +97,6 @@
         txtClass.Text = ""
         txtEmail.Text = ""
         txtCurrentPost.Text = ""
+        dtpDoB.Value = DateTimePicker.MinimumDateTime
     End Sub
 End Class
