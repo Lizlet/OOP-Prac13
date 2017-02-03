@@ -30,7 +30,7 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        If txtName.TextLength > 0 Or txtClass.TextLength > 0 Or txtEmail.TextLength > 0 Then
+        If txtName.TextLength > 0 And txtClass.TextLength > 0 And txtEmail.TextLength > 0 Then
             count = count + 1
             position = count
 
