@@ -37,6 +37,8 @@ Partial Class Form1
         Me.Button6 = New System.Windows.Forms.Button()
         Me.txtCurrentPost = New System.Windows.Forms.TextBox()
         Me.dtpDoB = New System.Windows.Forms.DateTimePicker()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -134,20 +136,20 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(97, 128)
+        Me.Button5.Location = New System.Drawing.Point(159, 130)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(117, 23)
+        Me.Button5.Size = New System.Drawing.Size(55, 23)
         Me.Button5.TabIndex = 12
-        Me.Button5.Text = "<< Prev"
+        Me.Button5.Text = "< Prev"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(220, 127)
+        Me.Button6.Location = New System.Drawing.Point(220, 130)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(118, 23)
+        Me.Button6.Size = New System.Drawing.Size(56, 23)
         Me.Button6.TabIndex = 13
-        Me.Button6.Text = "Next >>"
+        Me.Button6.Text = "Next >"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'txtCurrentPost
@@ -165,11 +167,31 @@ Partial Class Form1
         Me.dtpDoB.Size = New System.Drawing.Size(200, 20)
         Me.dtpDoB.TabIndex = 15
         '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(97, 130)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(56, 23)
+        Me.Button7.TabIndex = 16
+        Me.Button7.Text = "<< First"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(282, 130)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(56, 23)
+        Me.Button8.TabIndex = 17
+        Me.Button8.Text = "Last >>"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(355, 165)
+        Me.ClientSize = New System.Drawing.Size(592, 165)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.dtpDoB)
         Me.Controls.Add(Me.txtCurrentPost)
         Me.Controls.Add(Me.Button6)
@@ -207,4 +229,6 @@ Partial Class Form1
     Friend WithEvents Button6 As Button
     Friend WithEvents txtCurrentPost As TextBox
     Friend WithEvents dtpDoB As DateTimePicker
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button8 As Button
 End Class

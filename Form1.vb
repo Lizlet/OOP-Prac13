@@ -99,4 +99,24 @@
         txtCurrentPost.Text = ""
         dtpDoB.Value = DateTimePicker.MinimumDateTime
     End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        position = 1
+        FileGet(fileNumber, myStudent, position)
+        txtName.Text = myStudent.sName
+        txtClass.Text = myStudent.sClass
+        txtEmail.Text = myStudent.sEmail
+        dtpDoB.Value = myStudent.dtDoB
+        txtCurrentPost.Text = position
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        position = count
+        FileGet(fileNumber, myStudent, position)
+        txtName.Text = myStudent.sName
+        txtClass.Text = myStudent.sClass
+        txtEmail.Text = myStudent.sEmail
+        dtpDoB.Value = myStudent.dtDoB
+        txtCurrentPost.Text = position
+    End Sub
 End Class
